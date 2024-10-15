@@ -1,0 +1,100 @@
+/* .accordion-item {
+  margin-bottom: 10px;
+} */
+
+.accordion {
+  width: 25%;
+}
+.accordion-title {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.a-down,
+.a-up {
+  font-size: 18px;
+  color: grey;
+  font-weight: 600;
+}
+.accordion-content {
+  /* max-height: 0; */
+  max-height: 0;
+
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 10px;
+  margin-left: 16px;
+}
+
+.accordion-content.open {
+  max-height: 300px; /* Adjust based on the content size */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+li:last-child {
+  margin-bottom: 30px;
+}
+
+input[type="checkbox"] {
+  margin-right: 15px;
+}
+
+.c-box {
+  height: 20px;
+  width: 20px;
+  padding: 5px;
+  background-color: white;
+}
+
+/* Custom Checkbox Styles */
+input[type="checkbox"] {
+  /* Remove default styles */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid green; /* Green border */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+input[type="checkbox"]:checked {
+  background-color: white; /* White background when checked */
+  border-color: green; /* Green border when checked */
+}
+
+input[type="checkbox"]:checked::before {
+  content: "✓"; /* Checkmark */
+  display: block;
+  text-align: center;
+  color: green; /* Green checkmark */
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+@media (max-width: 925px) {
+  .accordion {
+    width: 30%;
+  }
+}
+
+@media (max-width: 770px) {
+  .accordion {
+    display: none;
+  }
+}

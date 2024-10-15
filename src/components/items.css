@@ -1,0 +1,224 @@
+/* h1 {
+  color: red;
+} */
+
+.head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gridrow {
+  display: flex;
+  gap: 17px;
+}
+
+.sub-head {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.head h3 {
+  margin-left: 17px;
+}
+
+.sub-head {
+  margin-right: 17px;
+}
+
+.Box {
+  width: 73%;
+}
+
+#options {
+  color: grey;
+  font-size: 13px;
+  padding: 3px;
+  width: 135px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.imgBox {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.c3 {
+  width: 18%;
+}
+
+.item {
+  width: 21%;
+  height: 420px;
+  border-radius: 6px;
+  margin-top: 50px;
+}
+
+.gridrow img {
+  cursor: pointer;
+}
+
+/* -------------------------------------Grid Boxes----------------------------------------------------- */
+
+.twoBox {
+  width: 43%;
+}
+
+.fourBox {
+  width: 21%;
+}
+
+.singleBox {
+  width: 60%;
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+
+.item img {
+  width: 100%;
+  height: 60%;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.itemp1 {
+  color: #237943;
+  margin-top: 25px;
+  font-weight: 600;
+}
+
+.itemBtn {
+  padding: 10px 10px;
+  border: none;
+  background-color: #237943;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  color: white;
+  margin-top: 20px;
+}
+
+.itemp2 {
+  font-weight: 600;
+}
+
+.item:hover.item img {
+  transform: scale(1.1);
+  overflow: none;
+}
+
+.div-2 {
+  width: 60%;
+}
+
+/* ------------------------------------------Media Queries------------------------------ */
+@media (max-width: 960px) {
+  .item {
+    width: 30%;
+  }
+}
+
+@media (max-width: 570px) {
+  .item {
+    width: 43%;
+  }
+  .gridrow {
+    display: none;
+  }
+  .head h3 {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 400px) {
+  .item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 740px) {
+  .Box {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  #options {
+    width: 100px;
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 720px) {
+  .div-2 {
+    width: 80%;
+  }
+}
+
+/* General Pagination Container Styling */
+.pagination-container {
+  background-color: #f3f3f3; /* Light gray background */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Custom pagination styling */
+.custom-pagination {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-pagination .page-item {
+  margin: 0 5px;
+}
+
+/* Active Page Styling */
+.custom-pagination .page-item.active .page-link {
+  background-color: #2e7d32; /* Green background */
+  border-color: #2e7d32; /* Green border */
+  color: white; /* White text */
+}
+
+/* Default Page Numbers Styling */
+.custom-pagination .page-item .page-link {
+  color: #333; /* Dark text color */
+  border-radius: 50%; /* Circular buttons */
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+  background-color: #d9d9d9; /* Non-white background for numbers */
+}
+
+/* Hover Effect for Page Numbers */
+.custom-pagination .page-item .page-link:hover {
+  background-color: #bdbdbd; /* Darker gray on hover */
+}
+
+/* Left and Right Arrow Styling */
+.left-arrow,
+.right-arrow {
+  display: inline-block;
+  font-size: 24px; /* Larger font for arrows */
+  margin: 0 15px; /* Space arrows from the numbers */
+  cursor: pointer;
+  color: #2e7d32; /* Green color for the arrows */
+}
+
+.left-arrow.disabled,
+.right-arrow.disabled {
+  color: #d3d3d3; /* Light gray when arrows are disabled */
+  cursor: not-allowed;
+}
+
+/* Hover Effect for Arrows */
+.left-arrow:hover:not(.disabled),
+.right-arrow:hover:not(.disabled) {
+  color: #1b5e20; /* Darker green on hover */
+}

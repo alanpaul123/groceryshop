@@ -1,0 +1,254 @@
+.card-2 {
+  max-width: 250px;
+  height: 450px;
+  /* border: 1px solid black; */
+  margin-left: 20px;
+  border-radius: 8px;
+  /* padding-bottom: 20px; */
+}
+
+.card-2 img {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-2 .pp1 {
+  color: green;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.card-2 button {
+  width: 100%;
+  padding: 10px;
+  background-color: #2b8a3e;
+
+  border-radius: 5px;
+  border: none;
+  color: white;
+  margin-top: 40px;
+}
+
+.pp2 {
+  font-weight: 600;
+}
+
+.card-2:hover img {
+  transform: scale(1.05);
+  overflow: hidden;
+}
+
+/* ------------------------------------The cutter box------------------------------------------------ */
+
+.cut {
+  text-decoration: line-through;
+  color: #868e96;
+  font-size: 16px;
+  margin-left: 15px;
+  font-weight: 700;
+}
+
+.prod-box {
+  display: flex;
+  /* border: 1px solid black; */
+
+  width: 70%;
+  margin: 0 auto;
+  gap: 100px;
+  margin-top: 30px;
+}
+
+.p-img {
+  width: 40%;
+  height: 420px;
+  border-radius: 8px;
+}
+.prod-Detail {
+  width: 40%;
+}
+
+.countbtn1 {
+  border: none;
+  background: lightgray;
+
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  font-size: 30px;
+}
+
+.minus {
+  background-color: lightgray;
+  color: grey;
+}
+.plus {
+  background-color: #2b8a3e;
+  color: white;
+}
+
+.countbox {
+  display: flex;
+  gap: 7px;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+
+  position: relative;
+  width: 140px;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+}
+
+.countp {
+  margin-top: 15px;
+  font-weight: 600;
+  /* font-family:""; */
+}
+
+.cutImg {
+  width: 30px;
+}
+
+.prod-Detail h2:first-child {
+  margin-top: 20px;
+  font-size: 35px;
+}
+
+.ph2 {
+  color: #2f9e44;
+  margin-bottom: 30px;
+}
+
+.pd-btns {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.pd-btn {
+  padding: 13px 0px;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.atc {
+  background-color: #237943;
+  color: white;
+}
+.atr {
+  background-color: red;
+  color: white;
+}
+.save {
+  border: 1px solid green !important;
+  color: green;
+  background-color: white;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.pd-last {
+  font-size: 13px;
+  margin-top: 20px;
+  color: #868e96;
+}
+
+/* ------------------Tabbed Components------------------------- */
+
+.tab {
+  display: flex;
+  align-items: flex-start;
+  width: 70%;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+
+  padding-top: 10px;
+  padding-left: 10px;
+  gap: 10px;
+}
+
+.tab-names {
+  width: 30%;
+  /* border: 1px solid black; */
+  padding: 10px;
+  border: 1px solid #adb5bd;
+  color: #868e96;
+}
+
+.tb {
+  font-size: 20px;
+
+  padding: 20px 0px;
+  border-bottom: 1px solid grey;
+}
+
+.tb:last-child {
+  border-bottom: none;
+}
+
+.active {
+  color: green !important;
+  font-weight: 600;
+}
+
+.renderedContent {
+  width: 60%;
+}
+
+/*------------------------------------- Media queries---------------------------------------------*/
+@media (max-width: 1000px) {
+  .prod-box {
+    width: 90%;
+  }
+  .p-img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 790px) {
+  .prod-box {
+    width: 100%;
+    gap: 30px;
+  }
+
+  .tb {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .prod-box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .p-img {
+    width: 80%;
+  }
+  .prod-Detail {
+    width: 70%;
+  }
+
+  .renderedContent {
+    font-size: 13px;
+  }
+}
+@media (max-width: 954px) {
+  .tab {
+    width: 90%;
+  }
+}
+
+@media (max-width: 478px) {
+  .tb {
+    font-size: 13px;
+  }
+  .tab {
+    width: 100%;
+  }
+}

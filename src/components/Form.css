@@ -1,0 +1,56 @@
+.f-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.f-name,
+.l-name {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+}
+
+.form-box {
+  width: 50%;
+  font-family: sans-serif;
+}
+
+.name-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-box input {
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #adb5bd;
+}
+
+.form-box label {
+  font-weight: 600;
+  margin: 10px 0px;
+}
+
+.form-box input:focus {
+  outline: none;
+}
+
+.create-account {
+  font-weight: 500 !important;
+  font-size: 14px;
+}
+
+.cbox {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+.rr {
+  color: grey;
+}
+
+@media (max-width: 788px) {
+  .form-box {
+    width: 90%;
+  }
+}
