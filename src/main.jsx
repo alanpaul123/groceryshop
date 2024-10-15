@@ -4,7 +4,7 @@ import App from "./App.jsx";
 import { BrowserRouter } from "react-router-dom";
 import "./index.css";
 import { Provider } from "react-redux";
-import foodStore from "./redux/FoodStore.js";
+import foodStore from "./redux/foodstore.js";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
