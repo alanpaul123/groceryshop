@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 export const fetchFood = createAsyncThunk("food/fetchFood", async () => {
   const result = await axios.get(
-    "https://groceryserver-oj5t.onrender.com/foods"
+    "https://groceryserver-nv6x.onrender.com/foods"
   );
   localStorage.setItem("allFoods", JSON.stringify(result.data));
   return result.data;
