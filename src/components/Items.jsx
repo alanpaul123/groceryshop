@@ -130,7 +130,7 @@ function Items() {
                       className="item-food"
                     />
                   </Link>
-                  <p className="itemp1">{item.price}</p>
+                  <p className="itemp1">${item.price}</p>
                   <p className="itemp2">{item.name}</p>
                   <button onClick={() => handleCart(item)} className="itemBtn">
                     Add to Cart

@@ -45,7 +45,7 @@ function Product(props) {
 
         <div className="c-box">
           <div class="info">
-            <p class="price">{props.price}</p>
+            <p class="price">${props.price}</p>
             <p className="text-nowrap">{props.name}</p>
           </div>
           <button onClick={handleCart} class="button">
